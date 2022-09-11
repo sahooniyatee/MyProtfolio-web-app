@@ -1,0 +1,63 @@
+:root {
+  --yellow: #fa8212;
+  --orange: #fe933b;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(253, 158, 238);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+.button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: var(--orange);
+  color: white;
+  border-radius: 10px;
+ 
+  cursor: pointer;
+  height: 2rem;
+  border: 2px solid var(--orange);
+  /* background-color: white; */
+  font-weight: bold;
+  font-style: italic;
+  width: 6rem;
+  Padding: 11px 26px 11px 26px;
+  /* background: Linear- gradient(180deg, #fdc50f 26.71% #fb982f 99.36%); */
+  box-shadow: 0px 20px 24px 3px rgba(245, 188, 113, 0.42);
+  overflow: hidden;
+}
+button,button::before{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button:hover{
+  color: var(--orange);
+  background-color: white;
+  transform: rotate(3deg);
+  /* transition: all 3s; */
+
+}
+
+@media screen and (max-width:1024px) {
+  .nav{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .nav svg{
+    color: var(--orange);
+  }
+}
